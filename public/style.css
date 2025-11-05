@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Georgia', serif; /* Simuliert die Serif-Schrift der Überschriften */
+    font-family: "Inter", sans-serif; /* Simuliert die Serif-Schrift der Überschriften */
     color: #333;
 }
 
