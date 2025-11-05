@@ -3,91 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ricetti in Pittari</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ricetti in Pittari - Nachbau</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .icon::before {
+            content: '★'; /* Generischer Platzhalter */
+            font-size: 30px;
+            display: block;
+            margin-bottom: 10px;
+            color: #CC3333; /* Rot der Marke */
+        }
+        /* Spezifischere Platzhalter */
+        .zutaten .icon::before { content: '🌿'; }
+        .tradition .icon::before { content: '🧑‍🍳'; }
+        .liebe .icon::before { content: '❤️'; }
+    </style>
 </head>
 <body>
-    <!-- Header / Navigation -->
-    <header>
+
+    <header class="main-header">
         <div class="logo">
-            <img src="logo.png" alt="Ricetti in Pittari Logo">
+            <img src="logo_placeholder.png" alt="Ricetti in Pittari Logo" style="width: 120px; height: 30px; background-color: #CC3333;">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Rezepte</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><button class="login-btn">Anmelden</button></li>
-            </ul>
+        <nav class="main-nav">
+            <a href="#">Home</a>
+            <a href="#">Rezepte</a>
+            <a href="#">Kontakt</a>
         </nav>
+        <div class="user-actions">
+            <span class="search-icon">🔍</span>
+            <a href="#" class="btn-anmelden">Anmelden</a>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="caselle-in-pittari.jpg" alt="Caselle in Pittari">
-        <div class="hero-text">
-            <p>Ein kleines Dorf mit Geschmack und Tradition.</p>
-            <h1>Caselle in Pittari</h1>
-            <a href="#" class="btn">Erfahre mehr →</a>
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <p class="hero-subtitle">Ein kleines Dorf mit Geschmack und Tradition</p>
+            <h1 class="hero-title">Caselle in Pittari</h1>
+            <a href="#" class="btn-mehr">Erfahre mehr →</a>
         </div>
     </section>
 
-    <!-- Feature Section -->
-    <section class="features">
-        <div class="feature">
+    <section class="feature-section">
+        <div class="feature-card zutaten">
+            <div class="icon"></div>
             <h3>Zutaten</h3>
-            <p>Hochwertige und ausgewählte Zutaten, wie z.B. zum Verkosten.</p>
+            <p>Handverlesene und ursprüngliche Zutaten, wie z.B. unser Caciocavallo.</p>
         </div>
-        <div class="feature">
+        <div class="feature-card tradition">
+            <div class="icon"></div>
             <h3>Tradition</h3>
-            <p>Bewährte Rezepte, die Generationen seit Jahrhunderten weitergeben.</p>
+            <p>Bewährte Rezepte, die Generationen und Kulturen überdauern.</p>
         </div>
-        <div class="feature">
+        <div class="feature-card liebe">
+            <div class="icon"></div>
             <h3>Liebe</h3>
-            <p>Handgemachte Kochkunst von Herzen und mit Liebe pur!</p>
+            <p>Handgemacht mit Leidenschaft, zum Beispiel unser Brot aus dem Steinofen.</p>
         </div>
     </section>
 
-    <!-- Top-Rezepte Section -->
-    <section class="top-rezepte">
+    <main class="main-content">
         <h2>Unsere Top-Rezepte</h2>
-        <p>Wo Tradition, Liebe und reine Zutaten zusammenfinden</p>
+        <p class="sub-heading">Wo Tradition, Liebe und reine Zutaten zusammenfinden</p>
 
-        <div class="recipe-card">
-            <img src="caciocavallo.jpg" alt="Caciocavallo">
-            <h3>Caciocavallo</h3>
-            <p>Caciocavallo ist ein italienischer Kult-Käse mit unverwechselbarer birnenförmiger Gestalt, der traditionell paarweise an der Schnur hängt.</p>
-            <a href="#">→</a>
-        </div>
+        <article class="recipe-card">
+            <div class="recipe-image-placeholder img-caciocavallo"></div>
+            <div class="recipe-details">
+                <h3>Caciocavallo</h3>
+                <p><strong>Caciocavallo</strong> ist ein italienischer Kult-Käse mit unverwechselbarer Birnenform, der kalt, der traditionell paarweise an der Schnur hängt.</p>
+                <a href="#" class="recipe-link">→</a>
+            </div>
+        </article>
 
-        <div class="recipe-card">
-            <img src="salsiccia.jpg" alt="Salsiccia">
-            <h3>Salsiccia</h3>
-            <p>Salsiccia ist eine traditionelle italienische Wurst aus fein gewürztem Schweinefleisch, oft mit Knoblauch, Fenchel oder Chili verfeinert.</p>
-            <a href="#">→</a>
-        </div>
+        <article class="recipe-card">
+            <div class="recipe-image-placeholder img-salsiccia"></div>
+            <div class="recipe-details">
+                <h3>Salsiccia</h3>
+                <p><strong>Salsiccia</strong> ist eine traditionelle italienische Wurst aus fein gewürztem Schweinefleisch, oft mit Knoblauch, Fenchel oder Chili verfeinert.</p>
+                <a href="#" class="recipe-link">→</a>
+            </div>
+        </article>
 
-        <div class="recipe-card">
-            <img src="brot.jpg" alt="Brot">
-            <h3>Brot</h3>
-            <p>Brot ist das zeitlose Grundnahrungsmittel, frisch gebacken mit knuspriger Kruste und weichem Inneren.</p>
-            <a href="#">→</a>
-        </div>
+        <article class="recipe-card">
+            <div class="recipe-image-placeholder img-brot"></div>
+            <div class="recipe-details">
+                <h3>Brot</h3>
+                <p><strong>Brot</strong> ist das zeitlose Grundnahrungsmittel, frisch gebacken mit knuspriger Kruste und weichem Inneren.</p>
+                <a href="#" class="recipe-link">→</a>
+            </div>
+        </article>
+    </main>
+
+    <section class="cta-banner">
+        <div class="cta-logo">Ricetti<br>in Pittari</div>
+        <a href="#" class="btn-cta">unverbindliche Anfrage</a>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta">
-        <h2>Ricetti in Pittari</h2>
-        <button class="inquiry-btn">unverbindliche Anfrage</button>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <ul>
-            <li><a href="#">Rezepte</a></li>
-            <li><a href="#">Impressum</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
+    <footer class="bottom-footer">
+        <a href="#">Rezepte</a>
+        <a href="#">Impressum</a>
+        <a href="#">Kontakt</a>
     </footer>
+
 </body>
 </html>
