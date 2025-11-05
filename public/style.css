@@ -67,7 +67,7 @@ a {
 /* 2. Hero Section */
 .hero-section {
     /* Simuliert das Hintergrundbild des Dorfes */
-    background-image: url('banner.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('banner.webp');
     background-size: cover;
     background-position: center;
     height: 450px; /* Höhe wie im Originalbild */
@@ -176,7 +176,7 @@ a {
 }
 
 /* Spezifische Platzhalterfarben (für mehr visuellen Bezug) */
-.img-caciocavallo { background-color: #F7D57C; }
+.img-caciocavallo { background-image: url('salsiccia-angepast.png'); }
 .img-salsiccia { background-color: #9E5632; }
 .img-brot { background-color: #B5A18C; }
 
