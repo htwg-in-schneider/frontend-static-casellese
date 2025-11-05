@@ -67,7 +67,7 @@ a {
 /* 2. Hero Section */
 .hero-section {
     /* Simuliert das Hintergrundbild des Dorfes */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('hero_placeholder.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Banner_Background_.png');
     background-size: cover;
     background-position: center;
     height: 450px; /* Höhe wie im Originalbild */
