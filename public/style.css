@@ -170,11 +170,11 @@ a {
     height: 180px;
     margin-right: 20px;
     border-radius: 5px;
-    background-color: #ccc;
+    /*background-color: #ccc;*/
     /* ÄNDERUNG: Stellt sicher, dass das gesamte Bild im Container sichtbar ist */
     background-size: contain; 
     background-repeat: no-repeat; /* Wichtig, damit das Bild nicht gekachelt wird */
-    background-position: center;
+    /*background-position: center;*/
 }
 
 /* Spezifische Platzhalterfarben (für mehr visuellen Bezug) */
