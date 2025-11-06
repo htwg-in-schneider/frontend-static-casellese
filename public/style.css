@@ -111,7 +111,7 @@ a {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: -80px; /* Überlappung mit Hero-Sektion */
+    margin-top: 0px; /* Überlappung mit Hero-Sektion */
     padding: 0 50px;
     position: relative;
     z-index: 10; /* Stellen Sie sicher, dass sie über dem Hero-Bild liegt */
