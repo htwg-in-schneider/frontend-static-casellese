@@ -1,6 +1,6 @@
 /* Globale Stile und Reset */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Inter, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Inter", sans-serif; /* Die Schriftart Inter ist eine serifenlose Schrift */
+    font-family: 'Inter', sans-serif; /* Die Schriftart Inter ist eine serifenlose Schrift */
     color: #333;
 }
 
