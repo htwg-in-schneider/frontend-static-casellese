@@ -1,6 +1,6 @@
 /* Globale Stile und Reset */
 body {
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -8,9 +8,25 @@ body {
     line-height: 1.6;
 }
 
+/* Basiseinstellung für alle Überschriften beibehalten */
 h1, h2, h3 {
-    font-family: 'Inter', sans-serif; /* Die Schriftart Inter ist eine serifenlose Schrift */
+    font-family: 'Inter', sans-serif;
     color: #333;
+}
+
+/* 1. H1: Inter Bold */
+h1 {
+    font-weight: 700; /* Oder das Schlüsselwort 'bold' */
+}
+
+/* 2. H2: Inter Medium */
+h2 {
+    font-weight: 500; /* Medium */
+}
+
+/* 3. H3: Inter Regular */
+h3 {
+    font-weight: 400; /* Regular */
 }
 
 a {
@@ -112,7 +128,7 @@ Ohne linear gradient
     font-size: 48px;
     margin: 0 0 20px 0;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    /*text-shadow: 2px 2px 4px rgba(0,0,0,0.5);*/
 }
 
 .btn-mehr {
