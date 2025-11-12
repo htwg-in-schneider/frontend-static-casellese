@@ -88,7 +88,7 @@ a {
 /* 2. Hero Section */
 .hero-section {
     /* Simuliert das Hintergrundbild des Dorfes */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('banner.webp');
+    background-image: url('banner.webp');
     background-size: cover;
     background-position: center;
     height: 450px; /* Höhe wie im Originalbild */
@@ -98,7 +98,7 @@ a {
     color: #fff;
     position: relative;
 }
-
+Ohne linear gradient
 .hero-overlay {
     max-width: 600px;
 }
