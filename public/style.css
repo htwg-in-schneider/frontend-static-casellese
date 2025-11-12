@@ -29,25 +29,12 @@ a {
     font-size: 14px;
 }
 
-/* Definiert den Logo-Container als Flexbox, um Elemente nebeneinander zu setzen */
-.logo {
-    display: flex;
-    align-items: center; /* Zentriert Siegel und Text vertikal zueinander */
-    gap: 5px; /* Kleiner Abstand zwischen Siegel und Text */
-}
-
-/* Stil für das Siegel-Bild */
-.header-siegel {
-    height: 30px; /* Höhe passend zur Navigationsleiste */
+.logo img {
+    /* Basierend auf der Optik der Vorlage wählen wir eine passende Größe */
+    height: 30px; 
     width: auto; /* Behält das Seitenverhältnis bei */
-    display: block;
-}
-
-/* Stil für den Text-Schriftzug (muss ebenfalls als Bild vorliegen) */
-.header-text-logo {
-    height: 30px; /* Gleiche Höhe wie das Siegel für konsistente Ausrichtung */
-    width: auto;
-    display: block;
+    display: block; /* Für bessere Steuerung */
+    padding-top: 5px; /* Ein kleiner Abstand, um es leicht nach unten zu verschieben */
 }
 
 .main-nav a {
