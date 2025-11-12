@@ -53,7 +53,7 @@ a {
 }
 
 .search-icon-img {
-    height: 18px; /* Oder die gewünschte Größe */
+    height: 28px; /* Oder die gewünschte Größe */
     width: auto;
     margin-right: 15px; /* Abstand zum Anmelden-Button beibehalten */
     cursor: pointer; /* Zeigt an, dass es klickbar ist */
