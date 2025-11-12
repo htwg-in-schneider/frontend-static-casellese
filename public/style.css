@@ -232,14 +232,14 @@ a {
     font-family: 'Georgia', serif;
     font-size: 60px;
     font-weight: bold;
-    color: #CC3333;
+    color: #e54c4c;
     line-height: 1;
     margin-bottom: 20px;
 }
 
 .btn-cta {
     display: inline-block;
-    background-color: #CC3333;
+    background-color: #e54c4c;
     color: #fff;
     padding: 15px 40px;
     border-radius: 8px;
