@@ -31,7 +31,7 @@ a {
 
 .logo img {
     /* Basierend auf der Optik der Vorlage wählen wir eine passende Größe */
-    height: 5px; 
+    height: 10px; 
     width: auto; /* Behält das Seitenverhältnis bei */
     display: block; /* Für bessere Steuerung */
     padding-top: 5px; /* Ein kleiner Abstand, um es leicht nach unten zu verschieben */
