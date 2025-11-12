@@ -52,10 +52,11 @@ a {
     align-items: center;
 }
 
-.search-icon {
-    font-size: 18px;
-    margin-right: 15px;
-    cursor: pointer;
+.search-icon-img {
+    height: 18px; /* Oder die gewünschte Größe */
+    width: auto;
+    margin-right: 15px; /* Abstand zum Anmelden-Button beibehalten */
+    cursor: pointer; /* Zeigt an, dass es klickbar ist */
 }
 
 .btn-anmelden {
