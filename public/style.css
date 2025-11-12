@@ -44,7 +44,7 @@ a {
 }
 
 .main-nav a:hover {
-    color: #CC3333;
+    color: #e54c4c;
 }
 
 .user-actions {
@@ -59,12 +59,12 @@ a {
 }
 
 .btn-anmelden {
-    background-color: #CC3333;
+    background-color: #e54c4c;
     color: #fff;
     padding: 8px 15px;
     border-radius: 5px;
     font-weight: bold;
-    border: 2px solid #CC3333;
+    border: 2px solid #e54c4c;
 }
 
 /* 2. Hero Section */
@@ -264,5 +264,5 @@ a {
 }
 
 .bottom-footer a:hover {
-    color: #CC3333;
+    color: #e54c4c;
 }
