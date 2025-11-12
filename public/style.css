@@ -78,13 +78,9 @@ a {
 
 /* 2. Stil für das neue Icon-Bild */
 .anmelden-icon {
-    height: 16px; /* Definiert die Größe des Icons */
+    height: 25px; /* Definiert die Größe des Icons */
     width: auto;
     display: block;
-
-    /* DIES IST DER SCHLÜSSEL: Das rote Bild weiß färben */
-    /* Die Filter-Werte wandeln die Farbe um, um sie dem weißen Text anzupassen */
-    filter: brightness(0) invert(1);
 }
 
 /* 2. Hero Section */
