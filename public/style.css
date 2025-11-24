@@ -1,4 +1,61 @@
-/* Globale Stile und Reset */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.text-accent {
+  color: #ff6600; /* Akzentfarbe */
+}
+
+.btn-accent {
+  background-color: #e54c4c;
+  color: white;
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  transition: 0.3s;
+}
+
+.btn-accent:hover {
+  background-color: #e54c4c;
+  color: #fff;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #e54c4c;
+}
+
+.image-container {
+  width: 100%; /* oder eine feste Breite */
+  height: 500px; /* Höhe des Containers */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Verhindert, dass das Bild über den Container hinausragt */
+  background-color: #f0f0f0; /* Optional: Hintergrundfarbe */
+}
+
+.image-container img {
+  object-fit: none; /* Verhindert Skalierung */
+  object-position: center; /* Zentriert das Bild */
+  max-width: none; /* Verhindert automatische Größenanpassung */
+  max-height: none;
+}
+
+#specialbanner {
+  background-color: #e54c4c;
+  color: white;
+}
+
+
+
+
+
+
+/* Globale Stile und Reset - old
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -8,33 +65,33 @@ body {
     line-height: 1.6;
 }
 
-/* Basiseinstellung für alle Überschriften beibehalten */
+/* Basiseinstellung für alle Überschriften beibehalten
 h1, h2, h3 {
     font-family: 'Inter', sans-serif;
     color: #333;
 }
 
-/* 1. H1: Inter Bold */
+/* 1. H1: Inter Bold 
 h1 {
-    font-weight: 700; /* Oder das Schlüsselwort 'bold' */
+    font-weight: 700; /* Oder das Schlüsselwort 'bold'
 }
 
-/* 2. H2: Inter Medium */
+/* 2. H2: Inter Medium 
 h2 {
-    font-weight: 500; /* Medium */
+    font-weight: 500; /* Medium 
 }
 
-/* 3. H3: Inter Regular */
+/* 3. H3: Inter Regular 
 h3 {
-    font-weight: 400; /* Regular */
+    font-weight: 400; /* Regular 
 }
 
 a {
     text-decoration: none;
-    color: #CC3333; /* Roter Link-Text */
+    color: #CC3333; /* Roter Link-Text 
 }
 
-/* 1. Header/Navigation Bar */
+/* 1. Header/Navigation Bar 
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -44,15 +101,15 @@ a {
     border-bottom: 1px solid #eee;
     font-size: 20px;
 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); /* Leichter Schatten für Tiefe */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); /* Leichter Schatten für Tiefe 
 }
 
 .logo img {
-    /* Basierend auf der Optik der Vorlage wählen wir eine passende Größe */
+    /* Basierend auf der Optik der Vorlage wählen wir eine passende Größe 
     height: 70px; 
-    width: auto; /* Behält das Seitenverhältnis bei */
-    display: block; /* Für bessere Steuerung */
-    padding-top: 5px; /* Ein kleiner Abstand, um es leicht nach unten zu verschieben */
+    width: auto; /* Behält das Seitenverhältnis bei 
+    display: block; /* Für bessere Steuerung 
+    padding-top: 5px; /* Ein kleiner Abstand, um es leicht nach unten zu verschieben 
 }
 
 .main-nav a {
@@ -71,21 +128,21 @@ a {
 }
 
 .search-icon-img {
-    height: 28px; /* Oder die gewünschte Größe */
+    height: 28px; /* Oder die gewünschte Größe 
     width: auto;
-    margin-right: 15px; /* Abstand zum Anmelden-Button beibehalten */
-    cursor: pointer; /* Zeigt an, dass es klickbar ist */
+    margin-right: 15px; /* Abstand zum Anmelden-Button beibehalten 
+    cursor: pointer; /* Zeigt an, dass es klickbar ist 
 }
 
-/* 1. Button-Stil (mit Flexbox für Anordnung) */
+/* 1. Button-Stil (mit Flexbox für Anordnung) 
 .btn-anmelden {
-    /* Flexbox für Anordnung */
+    /* Flexbox für Anordnung 
     display: flex; 
     align-items: center; 
     justify-content: center;
-    gap: 8px; /* Abstand zwischen Icon und Text */
+    gap: 8px; /* Abstand zwischen Icon und Text 
     
-    /* Behält die Optik des Buttons bei */
+    /* Behält die Optik des Buttons bei 
     background-color: #e54c4c;
     color: #fff;
     padding: 8px 15px;
@@ -94,22 +151,22 @@ a {
     border: 2px solid #e54c4c;
 }
 
-/* 2. Stil für das neue Icon-Bild */
+/* 2. Stil für das neue Icon-Bild 
 .anmelden-icon {
-    height: 25px; /* Definiert die Größe des Icons */
+    height: 25px; /* Definiert die Größe des Icons 
     width: auto;
     display: block;
 }
 
-/* 2. Hero Section */
+/* 2. Hero Section 
 .hero-section {
-    /* Simuliert das Hintergrundbild des Dorfes */
+    /* Simuliert das Hintergrundbild des Dorfes 
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('banner.webp');
     background-size: cover;
     background-position: center;
-    height: 450px; /* Höhe wie im Originalbild */
+    height: 450px; /* Höhe wie im Originalbild 
     display: flex;
-    align-items: flex-end; /* Inhalt unten ausrichten */
+    align-items: flex-end; /* Inhalt unten ausrichten 
     padding: 40px 10%;
     color: #fff;
     position: relative;
@@ -130,7 +187,7 @@ Ohne linear gradient
     font-weight: 700;
     margin: 0 0 20px 0;
     color: #fff;
-    /*text-shadow: 2px 2px 4px rgba(0,0,0,0.5);*/
+    /*text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .btn-mehr {
@@ -145,15 +202,15 @@ Ohne linear gradient
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-/* 3. Icon/Feature Section */
+/* 3. Icon/Feature Section 
 .feature-section {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 80px; /* Keine Überlappung mit Hero-Sektion */
+    margin-top: 80px; /* Keine Überlappung mit Hero-Sektion 
     padding: 0 50px;
     position: relative;
-    z-index: 10; /* Stellen Sie sicher, dass sie über dem Hero-Bild liegt */
+    z-index: 10; /* Stellen Sie sicher, dass sie über dem Hero-Bild liegt 
 }
 
 .feature-card {
@@ -178,7 +235,7 @@ Ohne linear gradient
     color: #666;
 }
 
-/* 4. Main Content Section (Top-Rezepte) */
+/* 4. Main Content Section (Top-Rezepte) 
 .main-content {
     padding: 80px 10%;
     text-align: center;
@@ -210,13 +267,13 @@ Ohne linear gradient
     margin-right: 20px;
     border-radius: 5px;
     /*background-color: #ccc;*/
-    /* ÄNDERUNG: Stellt sicher, dass das gesamte Bild im Container sichtbar ist */
+    /* ÄNDERUNG: Stellt sicher, dass das gesamte Bild im Container sichtbar ist 
     background-size: contain; 
-    background-repeat: no-repeat; /* Wichtig, damit das Bild nicht gekachelt wird */
-    /*background-position: center;*/
+    background-repeat: no-repeat; /* Wichtig, damit das Bild nicht gekachelt wird 
+    /*background-position: center;
 }
 
-/* Spezifische Platzhalterfarben (für mehr visuellen Bezug) */
+/* Spezifische Platzhalterfarben (für mehr visuellen Bezug) 
 .img-caciocavallo { background-image: url('caciocavallo.webp'); }
 .img-salsiccia { background-image: url('salsiccia.webp');  }
 .img-brot { background-image: url('brot.webp');  }
@@ -224,7 +281,7 @@ Ohne linear gradient
 .recipe-details {
     flex-grow: 1;
     position: relative;
-    padding-right: 50px; /* Platz für den Pfeil */
+    padding-right: 50px; /* Platz für den Pfeil 
 }
 
 .recipe-details h3 {
@@ -257,7 +314,7 @@ Ohne linear gradient
     transform: translateY(-50%) translateX(5px);
 }
 
-/* 5. Footer/CTA Section */
+/* 5. Footer/CTA Section 
 .cta-banner {
     background-color: #fff;
     padding: 50px 0;
@@ -285,7 +342,7 @@ Ohne linear gradient
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* 6. Bottom Footer */
+/* 6. Bottom Footer 
 .bottom-footer {
     background-color: #f8f8f8;
     text-align: center;
