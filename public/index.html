@@ -28,8 +28,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto fs-5">
                     <li class="nav-item"><a class="nav-link" href="category.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="category.html">Rezepte</a></li>
                     <li class="nav-item"><a class="nav-link" href="category.html">Kontakt</a></li>
@@ -43,61 +43,180 @@
     </nav>
 
     <!-- Statischer Banner -->
-    <div id="staticBanner" class="text-center py-5"
-        style="background-image: url('https://nucccio.github.io/casellese-images/banner_ricetti_in_pittari.webp'); background-size: cover; background-position: center; color: white;">
-        <div class="container">
-            <h1 class="fw-bold">Willkommen bei Saitenweise!</h1>
-            <p class="lead">Entdecke unsere hochwertigen Streichinstrumente</p>
-            <a href="recipe.html" class="btn btn-accent btn-lg">Zu unseren Produkten</a>
+    <div id="staticBanner" class="d-flex align-items-end" style="
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('https://nucccio.github.io/casellese-images/banner_ricetti_in_pittari.webp'); 
+        background-size: cover; 
+        height: 80vh; 
+        background-position: center; 
+        color: white;
+     ">
+
+        <div class="container d-flex justify-content-between pb-5">
+
+            <div>
+                <p class="lead m-0">Ein kleines Dorf mit Geschmack und Tradition.</p>
+                <h1 class="fw-bold m-0 display-3">Caselle in Pittari</h1>
+            </div>
+
+            <div class="d-flex align-items-end">
+                <a href="recipe.html" class="btn btn-accent btn-lg">Erfahre mehr →</a>
+            </div>
+
         </div>
     </div>
 
     <!-- Service Icons -->
-    <section class="py-4 bg-light text-center">
-        <div class="container d-flex justify-content-around flex-wrap">
-            <div><i class="bi bi-person"></i>
-                <p>Anmelden</p>
-            </div>
-            <div><i class="bi bi-envelope"></i>
-                <p>Kontakt</p>
-            </div>
-            <div><i class="bi bi-newspaper"></i>
-                <p>Newsletter</p>
-            </div>
-            <div><i class="bi bi-box-seam"></i>
-                <p>Versand</p>
+    <section class="py-5 bg-light" style="
+        border-top: 5px solid #E4002B; /* Rote Linie oben */
+        border-bottom: 5px solid #E4002B; /* Rote Linie unten */
+        margin-top: -5px; 
+        margin-bottom: -5px; 
+    ">
+        <div class="container">
+            <div class="row text-center g-4">
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="card p-4 rounded-4 shadow-sm w-100">
+                        <div class="mb-3">
+                            <img src="weizen-icon.png" alt="Icon Zutaten Ähre" style="height: 100px;"
+                                class="mx-auto d-block">
+                        </div>
+                        <h4 class="fw-bold">Zutaten</h4>
+                        <p>Handverlesene und ursprüngliche Zutaten, wie z.B.: dem Urdinkelsamen</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="card p-4 rounded-4 shadow-sm w-100">
+                        <div class="mb-3">
+                            <img src="koch-icon.png" alt="Icon Tradition Kochmütze" style="height: 100px;"
+                                class="mx-auto d-block">
+                        </div>
+                        <h4 class="fw-bold">Tradition</h4>
+                        <p>Bewährte Rezepte, die Generationen seit Jahrhunderten prägen</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 d-flex align-items-stretch">
+                    <div class="card p-4 rounded-4 shadow-sm w-100">
+                        <div class="mb-3">
+                            <img src="liebe-icon.png" alt="Icon Liebe Herz" style="height: 100px;"
+                                class="mx-auto d-block">
+                        </div>
+                        <h4 class="fw-bold">Liebe</h4>
+                        <p>Handgemachte Kochrezepte von Nonna's und Nonno's mit Liebe geprüft</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Intro Text -->
+    <!-- Intro Text 
     <section class="py-5 text-center">
         <div class="container">
-            <h3 class="fw-bold">Saitenweise - von Profis für Profis</h3>
-            <p class="mt-3"></p>
-            Seit über 35 Jahren bieten wir Musikerinnen und Musikern ein breites Angebot an hochwertigen
-            Streichinstrumenten an. Unser Motto: <span class="fw-bold">Für jeden das Richtige!</span> Egal ob Anfänger,
-            Fortgeschrittene oder Profis - bei uns finden Sie Instrumente, die zu Ihren individuellen Bedürfnissen
-            passen.
+            <h3 class="fw-bold display-4">Unsere Top Rezepte</h3>
+            <p class="mt-2 fs-5 text-secondary">
+                Entdecken Sie die kulinarische Seele von Caselle in Pittari.
             </p>
-            <p>
-                Unsere erfahrenen Fachkräfte beraten Sie persönlich und kompetent bei der Auswahl Ihres Instruments. Wir
-                legen großen Wert auf Qualität und Service, damit Sie lange Freude an Ihrem neuen Begleiter haben. Neben
-                Geigen, Bratschen, Celli und Kontrabässen führen wir auch eine große Auswahl an Zubehör und
-                Ersatzteilen.
+            <p class="lead mb-4 mx-auto" style="max-width: 800px;">
+                Tief verwurzelt in unserer Heimat und ihrer Tradition, präsentieren wir Ihnen eine handverlesene Auswahl
+                unserer besten Rezepte. Jedes Gericht erzählt die Geschichte von Generationen, von der einfachen, reinen
+                Zutat bis zum fertigen Meisterwerk.
             </p>
-            <p>
-                Besuchen Sie unser Geschäft oder stöbern Sie online in unserem Sortiment. Profitieren Sie von
-                regelmäßigen Aktionen, exklusiven Neuheiten und unserem schnellen Versand. Saitenweise steht für
-                Leidenschaft, Erfahrung und die Liebe zur Musik - überzeugen Sie sich selbst!
+            <p class="lead mb-4 mx-auto" style="max-width: 800px;">
+                Von <strong>Nonnas herzhaften Brot</strong> bis zu <strong>Nonnos Lieblings Käse</strong> – hier finden
+                Sie
+                bewährte Klassiker, die mit Liebe geprüft und über Jahrhunderte weitergegeben wurden. Wir legen Wert auf
+                ursprüngliche Zutaten und die Leidenschaft für ehrliches, unverfälschtes Kochen.
+            </p>
+            <p class="lead mb-5 mx-auto" style="max-width: 800px;">
+                Lassen Sie sich inspirieren und bringen Sie ein Stück italienische Lebensart in Ihre Küche.
             </p>
             <div class="text-center">
-                <a href="product.html" class="btn btn-accent">Zu unseren Produkten!</a>
+                <a href="recipe.html" class="btn btn-accent btn-lg">Alle Rezepte entdecken →</a>
             </div>
+        </div>
+    </section> -->
+
+    <!-- Rezepte Section -->
+    <section class="py-5">
+        <div class="container" style="max-width: 850px;">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-5">Unsere Top-Rezepte</h2>
+                <p class="lead text-secondary">Wo Tradition, Liebe und reine Zutaten zusammenfinden</p>
+            </div>
+
+            <div class="card mb-4 p-3 rounded-4 shadow-sm">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <img src="https://nucccio.github.io/casellese-images/caciocavallo.webp" class="img-fluid rounded-3"
+                            alt="Caciocavallo Käse vor Berglandschaft" style="height: 140px; object-fit: cover;">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body py-0 ps-4 d-flex justify-content-between">
+                            <div>
+                                <h4 class="card-title fw-bold m-0">Caciocavallo</h4>
+                                <p class="card-text small mt-1">Caciocavallo ist ein italienischer Kult-Käse mit
+                                    unverwechselbarer birnenförmiger Gestalt, der traditionell paarweise an der Schnur
+                                    hängt</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <a href="recipe.html" class="text-danger fs-3"><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4 p-3 rounded-4 shadow-sm">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <img src="https://nucccio.github.io/casellese-images/salsiccia.webp" class="img-fluid rounded-3" alt="Salsiccia Würste hängend"
+                            style="height: 140px; object-fit: cover;">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body py-0 ps-4 d-flex justify-content-between">
+                            <div>
+                                <h4 class="card-title fw-bold m-0">Salsiccia</h4>
+                                <p class="card-text small mt-1">Salsiccia ist eine traditionelle italienische Wurst aus
+                                    fein gewürztem Schweinefleisch, oft mit Knoblauch, Fenchel oder Chili verfeinert.
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <a href="recipe.html" class="text-danger fs-3"><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 rounded-4 shadow-sm">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <img src="https://nucccio.github.io/casellese-images/brot.webp" class="img-fluid rounded-3" alt="Brot im Ofen gebacken"
+                            style="height: 140px; object-fit: cover;">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body py-0 ps-4 d-flex justify-content-between">
+                            <div>
+                                <h4 class="card-title fw-bold m-0">Brot</h4>
+                                <p class="card-text small mt-1">Brot ist das zeitlose Grundnahrungsmittel, frisch
+                                    gebacken mit knuspriger Kruste und weichem Inneren.</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <a href="recipe.html" class="text-danger fs-3"><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- Testimonials
     <section class="py-5 bg-light">
         <div class="container">
             <div class="row g-4">
@@ -137,6 +256,8 @@
             </div>
         </div>
     </section>
+    -->
+
 
     <!-- Footer -->
     <footer class="bg-dark text-light py-4">
