@@ -19,7 +19,7 @@
 <body>
 
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" style="border-bottom: 5px solid #e54c4c;">
         <div class="container">
             <a class="navbar-brand fw-bold text-accent" href="index.html">
                 <img src="https://nucccio.github.io/casellese-images/logo_ricetti.webp" alt="Ricetti Logo" height="100"
@@ -67,8 +67,8 @@
 
     <!-- Service Icons -->
     <section class="py-5 bg-light" style="
-        border-top: 5px solid #E4002B; /* Rote Linie oben */
-        border-bottom: 5px solid #E4002B; /* Rote Linie unten */
+        border-top: 2px solid #e54c4c; /* Rote Linie oben */
+        border-bottom: 2px solid #e54c4c; /* Rote Linie unten */
         margin-top: -5px; 
         margin-bottom: -5px; 
     ">
@@ -141,24 +141,29 @@
 
     <!-- Rezepte Section -->
     <section class="py-5">
-        <div class="container" style="max-width: 850px;">
+        <div class="container" style="max-width: 900px;">
 
-            <div class="text-center mb-5">
+            <div class="text-center mb-3">
                 <h2 class="fw-bold display-5">Unsere Top-Rezepte</h2>
                 <p class="lead text-secondary">Wo Tradition, Liebe und reine Zutaten zusammenfinden</p>
+            </div>
+
+            <div class="text-center py-5">
+                <a href="recipe.html" class="btn btn-accent btn-lg">Alle Rezepte entdecken →</a>
             </div>
 
             <div class="card mb-4 p-3 rounded-4 shadow-sm">
                 <div class="row g-0 align-items-center">
                     <div class="col-4">
-                        <img src="https://nucccio.github.io/casellese-images/caciocavallo.webp" class="img-fluid rounded-3"
-                            alt="Caciocavallo Käse vor Berglandschaft" style="height: 140px; object-fit: cover;">
+                        <img src="https://nucccio.github.io/casellese-images/caciocavallo.webp"
+                            class="img-fluid rounded-3" alt="Caciocavallo Käse vor Berglandschaft"
+                            style="height: 180px; object-fit: cover;">
                     </div>
                     <div class="col-8">
                         <div class="card-body py-0 ps-4 d-flex justify-content-between">
                             <div>
                                 <h4 class="card-title fw-bold m-0">Caciocavallo</h4>
-                                <p class="card-text small mt-1">Caciocavallo ist ein italienischer Kult-Käse mit
+                                <p class="card-text medium mt-1">Caciocavallo ist ein italienischer Kult-Käse mit
                                     unverwechselbarer birnenförmiger Gestalt, der traditionell paarweise an der Schnur
                                     hängt</p>
                             </div>
@@ -173,14 +178,14 @@
             <div class="card mb-4 p-3 rounded-4 shadow-sm">
                 <div class="row g-0 align-items-center">
                     <div class="col-4">
-                        <img src="https://nucccio.github.io/casellese-images/salsiccia.webp" class="img-fluid rounded-3" alt="Salsiccia Würste hängend"
-                            style="height: 140px; object-fit: cover;">
+                        <img src="https://nucccio.github.io/casellese-images/salsiccia.webp" class="img-fluid rounded-3"
+                            alt="Salsiccia Würste hängend" style="height: 180px; object-fit: cover;">
                     </div>
                     <div class="col-8">
                         <div class="card-body py-0 ps-4 d-flex justify-content-between">
                             <div>
                                 <h4 class="card-title fw-bold m-0">Salsiccia</h4>
-                                <p class="card-text small mt-1">Salsiccia ist eine traditionelle italienische Wurst aus
+                                <p class="card-text medium mt-1">Salsiccia ist eine traditionelle italienische Wurst aus
                                     fein gewürztem Schweinefleisch, oft mit Knoblauch, Fenchel oder Chili verfeinert.
                                 </p>
                             </div>
@@ -195,14 +200,14 @@
             <div class="card p-3 rounded-4 shadow-sm">
                 <div class="row g-0 align-items-center">
                     <div class="col-4">
-                        <img src="https://nucccio.github.io/casellese-images/brot.webp" class="img-fluid rounded-3" alt="Brot im Ofen gebacken"
-                            style="height: 140px; object-fit: cover;">
+                        <img src="https://nucccio.github.io/casellese-images/brot.webp" class="img-fluid rounded-3"
+                            alt="Brot im Ofen gebacken" style="height: 180px; object-fit: cover;">
                     </div>
                     <div class="col-8">
                         <div class="card-body py-0 ps-4 d-flex justify-content-between">
                             <div>
                                 <h4 class="card-title fw-bold m-0">Brot</h4>
-                                <p class="card-text small mt-1">Brot ist das zeitlose Grundnahrungsmittel, frisch
+                                <p class="card-text medium mt-1">Brot ist das zeitlose Grundnahrungsmittel, frisch
                                     gebacken mit knuspriger Kruste und weichem Inneren.</p>
                             </div>
                             <div class="d-flex align-items-center">
@@ -212,6 +217,22 @@
                     </div>
                 </div>
             </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 text-center">
+        <div class="container">
+
+            <div class="mb-5">
+                <img src="https://nucccio.github.io/casellese-images/logo_ricetti.webp" alt="Ricetti in Pittari Logo"
+                    class="img-fluid" style="max-height: 200px;">
+            </div>
+
+            <a href="kontakt.html" class="btn btn btn-accent btn-lg shadow">
+                unverbindliche Anfrage
+                <i class="bi bi-arrow-right ms-2"></i>
+            </a>
 
         </div>
     </section>
@@ -260,7 +281,7 @@
 
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-4">
+    <footer class="bg-dark text-light py-4" style="border-top: 5px solid #e54c4c;">
         <div class="container d-flex flex-wrap justify-content-between">
             <div>
                 <h6>Informationen</h6>
